@@ -1,4 +1,4 @@
-output "main_out" {
+output "main_out_read_out" {
   value = "main: ${module.read.read_out}"
 }
 
@@ -19,5 +19,9 @@ output "answer_numero_cuatro" {
 }
 
 output "answer_numero_cinco" {
-  value = "answer_numero_cinco: ${module.write.question_4}"
+  value = "answer_numero_cinco: ${module.write.question_5}"
+}
+
+output "data_out_file_id" {
+  value = "data: ${module.data.print_file_id}"
 }
